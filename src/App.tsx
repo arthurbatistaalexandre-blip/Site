@@ -12,12 +12,26 @@ import {
   Minus, 
   X, 
   Sparkles, 
-  ChevronDown,
-  MessageCircle,
-  ExternalLink,
-  Flame,
-  Award
+  ChevronDown, 
+  MessageCircle, 
+  ExternalLink, 
+  Flame, 
+  Award 
 } from 'lucide-react';
+
+// Production-ready asset imports (bundled and hashed by Vite)
+import roscaTrancadaImg from './assets/images/rosca_trancada_1792459624404.jpg';
+import cafeCoadoImg from './assets/images/cafe_coado_1792554640621.jpg';
+import boloMilhoImg from './assets/images/bolo_milho_1792459624177.jpg';
+import paoQueijoImg from './assets/images/pao_queijo_1792459624811.jpg';
+import doceLeiteImg from './assets/images/doce_leite_1792459626273.jpg';
+import sucoLaranjaImg from './assets/images/suco_laranja_1792554641326.jpg';
+import roscaCocoImg from './assets/images/rosca_coco_1792459626544.jpg';
+import cappuccinoEstacaoImg from './assets/images/cappuccino_estacao_1792554642041.jpg';
+import boloCenouraImg from './assets/images/bolo_cenoura_1792459626552.jpg';
+import empadaGoianaImg from './assets/images/empada_goiana_1792459626495.jpg';
+import cafeColonialMesaImg from './assets/images/cafe_colonial_mesa_1792553602315.jpg';
+import sobreRitualImg from './assets/images/sobre_ritual_1792554642552.jpg';
 
 interface MenuItem {
   id: string;
@@ -40,7 +54,7 @@ const MENU_ITEMS: MenuItem[] = [
     price: 26.0,
     description: 'Massa fofa de fermentação natural com calda cristalizada de leite e toque sutil de canela.',
     tag: 'Fornada Quente',
-    image: '/src/assets/images/rosca_trancada_1792459624404.jpg',
+    image: roscaTrancadaImg,
     featured: true
   },
   {
@@ -51,7 +65,7 @@ const MENU_ITEMS: MenuItem[] = [
     price: 9.5,
     description: 'Grãos 100% arábica do cerrado goiano, moídos na hora e passados individualmente à sua mesa.',
     tag: 'Grão Especial',
-    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80',
+    image: cafeCoadoImg,
     featured: true
   },
   {
@@ -62,7 +76,7 @@ const MENU_ITEMS: MenuItem[] = [
     price: 15.0,
     description: 'Feito com espigas frescas colhidas no dia, textura úmida e casquinha delicada.',
     tag: 'Mais Pedido',
-    image: '/src/assets/images/bolo_milho_1792459624177.jpg',
+    image: boloMilhoImg,
     featured: true
   },
   {
@@ -73,7 +87,7 @@ const MENU_ITEMS: MenuItem[] = [
     price: 8.5,
     description: 'Polvilho artesanal e queijo meia-cura da serra. Casquinha crocante e miolo puxa-puxa.',
     tag: 'Tradicional',
-    image: '/src/assets/images/pao_queijo_1792459624811.jpg',
+    image: paoQueijoImg,
     featured: true
   },
   {
@@ -83,7 +97,7 @@ const MENU_ITEMS: MenuItem[] = [
     categoryLabel: 'Doces de Tacho',
     price: 18.0,
     description: 'Seis horas de cozimento lento no tacho de cobre com leite fresco da fazenda.',
-    image: '/src/assets/images/doce_leite_1792459626273.jpg'
+    image: doceLeiteImg
   },
   {
     id: 'suco-laranja',
@@ -92,7 +106,7 @@ const MENU_ITEMS: MenuItem[] = [
     categoryLabel: 'Sucos & Bebidas',
     price: 12.0,
     description: 'Puro suco de laranjas selecionadas espremido na hora da sua solicitação, sem conservantes.',
-    image: 'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=800&q=80'
+    image: sucoLaranjaImg
   },
   {
     id: 'rosca-coco',
@@ -101,7 +115,7 @@ const MENU_ITEMS: MenuItem[] = [
     categoryLabel: 'Roscas & Pães',
     price: 28.0,
     description: 'Enroladinhos dourados com recheio úmido de coco fresco ralado e calda caramelizada.',
-    image: '/src/assets/images/rosca_coco_1792459626544.jpg'
+    image: roscaCocoImg
   },
   {
     id: 'cappuccino-estacao',
@@ -110,7 +124,7 @@ const MENU_ITEMS: MenuItem[] = [
     categoryLabel: 'Cafés Especiais',
     price: 14.0,
     description: 'Espresso encorpado, leite vaporizado aveludado, cacau 70% e pitada aromática de canela.',
-    image: 'https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80'
+    image: cappuccinoEstacaoImg
   },
   {
     id: 'bolo-cenoura',
@@ -119,7 +133,7 @@ const MENU_ITEMS: MenuItem[] = [
     categoryLabel: 'Bolos da Vovó',
     price: 16.0,
     description: 'Fatia generosa com calda vulcão de chocolate belga aplicada na hora de servir.',
-    image: '/src/assets/images/bolo_cenoura_1792459626552.jpg'
+    image: boloCenouraImg
   },
   {
     id: 'empada-frango',
@@ -128,7 +142,7 @@ const MENU_ITEMS: MenuItem[] = [
     categoryLabel: 'Quitandas & Salgados',
     price: 13.0,
     description: 'Massa podre que derrete na boca, recheio úmido de peito desfiado, azeitonas e toque goiano.',
-    image: '/src/assets/images/empada_goiana_1792459626495.jpg'
+    image: empadaGoianaImg
   }
 ];
 
@@ -397,7 +411,7 @@ export default function App() {
           >
             <div className="relative w-full aspect-[4/5] rounded-none overflow-hidden border border-[#D4AF37]/30 shadow-2xl bg-[#141E33]">
               <img 
-                src="/src/assets/images/rosca_trancada_1792459624404.jpg" 
+                src={roscaTrancadaImg} 
                 alt="Roscas artesanais e pães coloniais quentinhos saindo do forno na Estação do Café" 
                 className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out brightness-95"
                 loading="eager"
@@ -458,7 +472,7 @@ export default function App() {
           {/* Grand Banquet Picture Banner */}
           <div className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden border border-[#D4AF37]/30 shadow-2xl mb-16">
             <img 
-              src="/src/assets/images/cafe_colonial_mesa_1792553602315.jpg" 
+              src={cafeColonialMesaImg} 
               alt="Banquete de Café Colonial na Estação do Café em Caldas Novas" 
               className="w-full h-full object-cover object-center brightness-95"
               loading="lazy"
@@ -792,7 +806,7 @@ export default function App() {
             >
               <div className="relative border border-[#D4AF37]/30 p-2 md:p-3 bg-[#141E33]">
                 <img 
-                  src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1100&q=85" 
+                  src={sobreRitualImg} 
                   alt="Ritual colonial do café coado no bule na Estação do Café" 
                   className="w-full aspect-[4/3] object-cover brightness-90 contrast-105"
                   loading="lazy"
