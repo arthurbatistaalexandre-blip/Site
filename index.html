@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estação do Café | Cafeteria Colonial em Caldas Novas</title>
+    <meta name="description" content="Cafeteria colonial artesanal em Caldas Novas. Roscas quentinhas saindo do forno, bolos da vovó, pães de queijo e cafés especiais preparados com afeto." />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Estação do Café — Cafeteria Colonial" />
+    <meta property="og:description" content="O calor do forno. A alma do café. Pães, roscas, quitandas e cafés especiais em Caldas Novas." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23D4AF37'%3E%3Cpath d='M2 21h18v-2H2M20 8h-2V5h2m0-2H4v10a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-3h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z'/%3E%3C/svg%3E" />
+
+    <!-- Google Fonts: Playfair Display + Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Estação do Café",
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85",
+      "telephone": "+5564992711745",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Machado de Assis - Termal",
+        "addressLocality": "Caldas Novas",
+        "addressRegion": "GO",
+        "postalCode": "75680-106",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "07:00",
+          "closes": "19:00"
+        }
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+  </head>
+  <body class="bg-[#0F172A] text-slate-200 antialiased selection:bg-[#D4AF37] selection:text-[#0F172A]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

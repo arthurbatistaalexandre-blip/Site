@@ -1,0 +1,6 @@
+{
+  "name": "Estação do Café",
+  "description": "Cafeteria colonial de alta gastronomia afetiva em Caldas Novas - GO. Roscas quentinhas, bolos artesanais, quitandas e cafés especiais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
